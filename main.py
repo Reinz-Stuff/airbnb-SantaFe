@@ -31,5 +31,5 @@ except FileExistsError:
 df = pd.DataFrame(data)
 df.to_csv(f'results/result.csv', index=False)
 df.to_excel(f'results/result.xlsx', index=False)
-df.to_json(f'results/result.json')
+df.to_json(f'results/result.json', orient='records')
 
